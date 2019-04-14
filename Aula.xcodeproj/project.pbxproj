@@ -26,6 +26,7 @@
 		198A700F225B9E4900B6B019 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A700E225B9E4900B6B019 /* SignUpVC.swift */; };
 		198A7011225BB00500B6B019 /* SelectRoleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A7010225BB00500B6B019 /* SelectRoleVC.swift */; };
 		198A7013225BBA0F00B6B019 /* CourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A7012225BBA0F00B6B019 /* CourseVC.swift */; };
+		19ABFC9622630AE10017C867 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ABFC9522630AE10017C867 /* FirebaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		198A700E225B9E4900B6B019 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		198A7010225BB00500B6B019 /* SelectRoleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleVC.swift; sourceTree = "<group>"; };
 		198A7012225BBA0F00B6B019 /* CourseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseVC.swift; sourceTree = "<group>"; };
+		19ABFC9522630AE10017C867 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 		1B4888A15F3BF2E484E657B6 /* Pods-Aula.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aula.debug.xcconfig"; path = "Target Support Files/Pods-Aula/Pods-Aula.debug.xcconfig"; sourceTree = "<group>"; };
 		31C776ACFBE489803FAB90F0 /* Pods-Aula.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aula.release.xcconfig"; path = "Target Support Files/Pods-Aula/Pods-Aula.release.xcconfig"; sourceTree = "<group>"; };
 		B2F1F0932D82CE4EC38E46B1 /* libPods-Aula.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aula.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 				1943D3AC225B6311008B3A34 /* LaunchScreen.storyboard */,
 				1943D3AF225B6311008B3A34 /* Info.plist */,
 				197DA271225CEB240049965C /* GoogleService-Info.plist */,
+				19ABFC9522630AE10017C867 /* FirebaseHelper.swift */,
 			);
 			path = Aula;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				197FF450225BE8A400EE295C /* AddCourseVC.swift in Sources */,
 				198A700F225B9E4900B6B019 /* SignUpVC.swift in Sources */,
 				197FF452225BF53000EE295C /* CourseCell.swift in Sources */,
+				19ABFC9622630AE10017C867 /* FirebaseHelper.swift in Sources */,
 				197FF456225C178700EE295C /* TopicCell.swift in Sources */,
 				197FF454225C171B00EE295C /* TopicVC.swift in Sources */,
 				1943D3BA225B8416008B3A34 /* Extensions.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gTv-rc-Cxx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bEq-Q9-eia">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -185,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1852.1739130434785" y="103.79464285714285"/>
+            <point key="canvasLocation" x="2762.3188405797105" y="103.79464285714285"/>
         </scene>
         <!--SplashVC-->
         <scene sceneID="JAb-kZ-Maw">
@@ -224,10 +224,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lNt-3J-x9E"/>
                     </view>
+                    <navigationItem key="navigationItem" id="S3c-tP-1ex"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMv-uv-P8w" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="186" y="124"/>
+            <point key="canvasLocation" x="1095.6521739130435" y="123.88392857142857"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="zRS-g6-OSl">
@@ -474,7 +475,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Hl-t2-OMy" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2739.130434782609" y="103.79464285714285"/>
+            <point key="canvasLocation" x="3649.275362318841" y="103.79464285714285"/>
         </scene>
         <!--Select RoleVC-->
         <scene sceneID="uW2-LH-RZi">
@@ -552,6 +553,9 @@
                                                 <size key="value" width="12" height="24"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="studenTapped:" destination="433-wW-JBH" eventType="touchUpInside" id="f2k-zo-Twa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myv-8D-Hay">
                                         <rect key="frame" x="21" y="313" width="207" height="63"/>
@@ -572,6 +576,9 @@
                                                 <size key="value" width="12" height="24"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="teacherTapped:" destination="433-wW-JBH" eventType="touchUpInside" id="8hZ-9h-P9X"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -597,7 +604,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4s-sM-i81" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3573.913043478261" y="87.723214285714278"/>
+            <point key="canvasLocation" x="4484.057971014493" y="87.723214285714278"/>
         </scene>
         <!--CourseVC-->
         <scene sceneID="ikp-zg-Vj5">
@@ -657,11 +664,14 @@ course</string>
                                                 <size key="value" width="12" height="24"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="g1U-tY-mbW" kind="show" id="N5E-rX-Jir"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gpu-iz-3Zf">
-                                <rect key="frame" x="0.0" y="154.33333333333331" width="414" height="707.66666666666674"/>
+                                <rect key="frame" x="0.0" y="141.33333333333331" width="414" height="720.66666666666674"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CourseCell" rowHeight="113" id="esL-uk-PPb" customClass="CourseCell" customModule="Aula" customModuleProvider="target">
@@ -713,7 +723,7 @@ course</string>
                                                         <constraint firstItem="RxJ-jG-TY1" firstAttribute="leading" secondItem="2X6-jw-76s" secondAttribute="leading" constant="11" id="U4P-hl-XoD"/>
                                                         <constraint firstItem="ji8-BD-bak" firstAttribute="top" secondItem="RxJ-jG-TY1" secondAttribute="bottom" constant="6" id="VgV-zW-fzg"/>
                                                         <constraint firstItem="ji8-BD-bak" firstAttribute="leading" secondItem="RxJ-jG-TY1" secondAttribute="leading" id="g62-6q-G1R"/>
-                                                        <constraint firstAttribute="trailing" secondItem="RxJ-jG-TY1" secondAttribute="trailing" constant="116.33" id="jQc-KK-1rj"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RxJ-jG-TY1" secondAttribute="trailing" constant="10" id="jQc-KK-1rj"/>
                                                         <constraint firstItem="5Rc-NA-qTi" firstAttribute="centerX" secondItem="2X6-jw-76s" secondAttribute="centerX" id="jyA-Ud-w7s"/>
                                                         <constraint firstAttribute="bottom" secondItem="5Rc-NA-qTi" secondAttribute="bottom" constant="10" id="vpm-Yn-XUe"/>
                                                         <constraint firstItem="ji8-BD-bak" firstAttribute="centerX" secondItem="2X6-jw-76s" secondAttribute="centerX" id="yb1-Tu-qoQ"/>
@@ -750,7 +760,7 @@ course</string>
                             <constraint firstItem="KHs-Zr-cb3" firstAttribute="leading" secondItem="pdN-ij-jZg" secondAttribute="leading" id="Nlh-nm-LrX"/>
                             <constraint firstItem="EVu-3Z-YfB" firstAttribute="centerY" secondItem="CUO-Pj-Bjd" secondAttribute="centerY" id="a0l-oe-eqY"/>
                             <constraint firstItem="gpu-iz-3Zf" firstAttribute="leading" secondItem="pdN-ij-jZg" secondAttribute="leading" id="bv0-vY-Mp2"/>
-                            <constraint firstItem="gpu-iz-3Zf" firstAttribute="top" secondItem="LO3-2b-8Ab" secondAttribute="bottom" constant="28" id="cH7-An-sd9"/>
+                            <constraint firstItem="gpu-iz-3Zf" firstAttribute="top" secondItem="LO3-2b-8Ab" secondAttribute="bottom" constant="15" id="cH7-An-sd9"/>
                             <constraint firstAttribute="trailing" secondItem="KHs-Zr-cb3" secondAttribute="trailing" id="eqH-HN-u7D"/>
                             <constraint firstItem="LO3-2b-8Ab" firstAttribute="leading" secondItem="pdN-ij-jZg" secondAttribute="leading" constant="27" id="fr4-dv-tkM"/>
                             <constraint firstItem="EVu-3Z-YfB" firstAttribute="centerX" secondItem="CUO-Pj-Bjd" secondAttribute="centerX" id="mTc-L7-Roi"/>
@@ -759,10 +769,14 @@ course</string>
                         <viewLayoutGuide key="safeArea" id="pdN-ij-jZg"/>
                     </view>
                     <navigationItem key="navigationItem" id="TrV-dT-U46"/>
+                    <connections>
+                        <outlet property="courseTableView" destination="gpu-iz-3Zf" id="kLm-Hg-8Dg"/>
+                        <outlet property="noCoursesFoundView" destination="EVu-3Z-YfB" id="fyd-0c-eQe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSr-lQ-uUX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5520.289855072464" y="4.6875"/>
+            <point key="canvasLocation" x="6430.434782608696" y="4.6875"/>
         </scene>
         <!--Add CourseVC-->
         <scene sceneID="9oc-aH-3Pb">
@@ -1003,11 +1017,13 @@ course</string>
                     <connections>
                         <outlet property="courseCodeTextField" destination="b8W-Oa-nsZ" id="GP6-hm-ECk"/>
                         <outlet property="courseNameTextField" destination="xVV-t6-m42" id="M08-tO-wDG"/>
+                        <outlet property="endTimeTextField" destination="6Ql-Mi-9pd" id="Zlx-2B-KI2"/>
+                        <outlet property="startTimeTextField" destination="2PQ-FZ-Wqi" id="9el-f4-LNf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7s-Hh-MSt" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3632" y="754"/>
+            <point key="canvasLocation" x="4542.0289855072469" y="753.34821428571422"/>
         </scene>
         <!--TopicVC-->
         <scene sceneID="NtV-BR-Anu">
@@ -1165,7 +1181,7 @@ course</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiv-FN-wQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6586.9565217391309" y="4.6875"/>
+            <point key="canvasLocation" x="7497.1014492753629" y="4.6875"/>
         </scene>
         <!--Topic CollectionVC-->
         <scene sceneID="hZB-VJ-Rt3">
@@ -1236,41 +1252,24 @@ course</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Wf-zX-FA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7855.0724637681169" y="35.491071428571423"/>
+            <point key="canvasLocation" x="8765.217391304348" y="35.491071428571423"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="8SH-B3-t9R">
+        <scene sceneID="HCt-eN-SUn">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gTv-rc-Cxx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="bEq-Q9-eia" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fFd-Pw-9a7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eER-6P-Fw8">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VAR-hc-tn6"/>
+                        <segue destination="HlT-5N-Kfn" kind="relationship" relationship="rootViewController" id="9cJ-Ah-JjC"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Xf-vZ-XMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TnP-rL-0Jd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942.02898550724649" y="103.79464285714285"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="2Vh-45-XVK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="oZD-2m-9gk" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PTU-kM-HSY">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="aPm-Ad-NpQ" kind="relationship" relationship="rootViewController" id="aMo-4q-lmh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1i1-oT-Jrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4610.144927536232" y="4.6875"/>
+            <point key="canvasLocation" x="185.50724637681162" y="123.88392857142857"/>
         </scene>
     </scenes>
     <resources>

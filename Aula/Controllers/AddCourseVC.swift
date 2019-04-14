@@ -12,14 +12,11 @@ let course = Database.database().reference(withPath: "course")
 class AddCourseVC: UIViewController {
     @IBOutlet weak var courseCodeTextField: CustomTextField!
     @IBOutlet weak var courseNameTextField: CustomTextField!
-    
+    @IBOutlet weak var endTimeTextField: CustomTextField!
+    @IBOutlet weak var startTimeTextField: CustomTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        course.observe(.value) { (data) in
-            print(data.value)
-        }
-        //course.ref.updateChildValues(["courseCode":"CS554"])
-        // Do any additional setup after loading the view
+        
     }
 
     
@@ -30,7 +27,17 @@ class AddCourseVC: UIViewController {
 //MARK: Actions
 extension AddCourseVC {
     @IBAction func addCourseButtonTapped(_ sender: UIButton) {
-       let newChildRef = course.ref.childByAutoId()
-        newChildRef.setValue(["courseCode":courseCodeTextField.text!, "courseName":courseNameTextField.text!])
+       saveCourse()
+        navigationController?.popViewController(animated: true)
+    }
+}
+
+//MARk: Firebase
+
+extension AddCourseVC {
+    func saveCourse() {
+        guard let user = Auth.auth().currentUser else {return}
+        let newChildRef = FirebaseHelper.shared.coursesRef.ref.childByAutoId()
+        newChildRef.setValue(["courseCode":courseCodeTextField.text!, "courseName":courseNameTextField.text!, "startTime":startTimeTextField.text!, "endTime":endTimeTextField.text!, "creater":user.uid])
     }
 }
