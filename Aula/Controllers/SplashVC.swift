@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SplashVC: UIViewController {
 
@@ -16,7 +17,4 @@ class SplashVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    
-
 }
