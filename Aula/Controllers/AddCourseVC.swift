@@ -7,24 +7,30 @@
 //
 
 import UIKit
-
+import Firebase
+let course = Database.database().reference(withPath: "course")
 class AddCourseVC: UIViewController {
-
+    @IBOutlet weak var courseCodeTextField: CustomTextField!
+    @IBOutlet weak var courseNameTextField: CustomTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        course.observe(.value) { (data) in
+            print(data.value)
+        }
+        //course.ref.updateChildValues(["courseCode":"CS554"])
+        // Do any additional setup after loading the view
     }
+
     
+    
+}
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//MARK: Actions
+extension AddCourseVC {
+    @IBAction func addCourseButtonTapped(_ sender: UIButton) {
+       let newChildRef = course.ref.childByAutoId()
+        newChildRef.setValue(["courseCode":courseCodeTextField.text!, "courseName":courseNameTextField.text!])
     }
-    */
-
 }

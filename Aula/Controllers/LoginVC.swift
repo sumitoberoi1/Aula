@@ -9,6 +9,9 @@
 import UIKit
 
 class LoginVC: UIViewController {
+    @IBOutlet weak var userEmailTextField: CustomTextField!
+    @IBOutlet weak var userPasswordTextField: CustomTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,5 +21,5 @@ class LoginVC: UIViewController {
 //MARK: UI Methods
 
 extension LoginVC {
-   
+    
 }

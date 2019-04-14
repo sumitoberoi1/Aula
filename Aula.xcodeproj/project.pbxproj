@@ -17,6 +17,7 @@
 		1943D3B8225B7A96008B3A34 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943D3B7225B7A96008B3A34 /* SplashVC.swift */; };
 		1943D3BA225B8416008B3A34 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943D3B9225B8416008B3A34 /* Extensions.swift */; };
 		197DA270225C47C00049965C /* TopicCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197DA26F225C47C00049965C /* TopicCollectionVC.swift */; };
+		197DA272225CEB240049965C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 197DA271225CEB240049965C /* GoogleService-Info.plist */; };
 		197FF450225BE8A400EE295C /* AddCourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FF44F225BE8A300EE295C /* AddCourseVC.swift */; };
 		197FF452225BF53000EE295C /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FF451225BF53000EE295C /* CourseCell.swift */; };
 		197FF454225C171B00EE295C /* TopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FF453225C171B00EE295C /* TopicVC.swift */; };
@@ -39,6 +40,7 @@
 		1943D3B7225B7A96008B3A34 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		1943D3B9225B8416008B3A34 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		197DA26F225C47C00049965C /* TopicCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCollectionVC.swift; sourceTree = "<group>"; };
+		197DA271225CEB240049965C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		197FF44F225BE8A300EE295C /* AddCourseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseVC.swift; sourceTree = "<group>"; };
 		197FF451225BF53000EE295C /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		197FF453225C171B00EE295C /* TopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVC.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				1943D3AA225B6311008B3A34 /* Assets.xcassets */,
 				1943D3AC225B6311008B3A34 /* LaunchScreen.storyboard */,
 				1943D3AF225B6311008B3A34 /* Info.plist */,
+				197DA271225CEB240049965C /* GoogleService-Info.plist */,
 			);
 			path = Aula;
 			sourceTree = "<group>";
@@ -129,7 +132,6 @@
 				1B4888A15F3BF2E484E657B6 /* Pods-Aula.debug.xcconfig */,
 				31C776ACFBE489803FAB90F0 /* Pods-Aula.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -201,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1943D3AE225B6311008B3A34 /* LaunchScreen.storyboard in Resources */,
+				197DA272225CEB240049965C /* GoogleService-Info.plist in Resources */,
 				1943D3AB225B6311008B3A34 /* Assets.xcassets in Resources */,
 				1943D3A9225B6310008B3A34 /* Main.storyboard in Resources */,
 			);
@@ -399,7 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 985WCWGJY4;
+				DEVELOPMENT_TEAM = QV8VZK8B6W;
 				INFOPLIST_FILE = Aula/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -418,7 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 985WCWGJY4;
+				DEVELOPMENT_TEAM = QV8VZK8B6W;
 				INFOPLIST_FILE = Aula/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

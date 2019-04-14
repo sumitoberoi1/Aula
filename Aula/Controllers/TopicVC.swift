@@ -28,3 +28,14 @@ class TopicVC: UIViewController {
     */
 
 }
+
+
+extension TopicVC:UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let topicCell = tableView.dequeueReusableCell(withIdentifier: "TopicCell", for: indexPath) as! TopicCell
+        return topicCell
+    }
+}
