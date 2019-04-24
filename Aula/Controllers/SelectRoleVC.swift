@@ -20,10 +20,12 @@ class SelectRoleVC: UIViewController {
 extension SelectRoleVC {
     @IBAction func studenTapped(_ sender: UIButton) {
         saveUserWithRole("student")
+        navigateToCourse()
     }
     
     @IBAction func teacherTapped(_ sender: UIButton) {
         saveUserWithRole("teacher")
+        navigateToCourse()
     }
     
 }
@@ -36,6 +38,10 @@ extension SelectRoleVC {
         if let user = Auth.auth().currentUser {
             FirebaseHelper.shared.dbRef.child("users").child(user.uid).setValue(["role":role])
         }
+    }
+    private func navigateToCourse() {
+        let courseVC = storyboard?.instantiateViewController(withIdentifier: "CourseVC") as! CourseVC
+        navigationController?.pushViewController(courseVC, animated: true)
     }
 }
 

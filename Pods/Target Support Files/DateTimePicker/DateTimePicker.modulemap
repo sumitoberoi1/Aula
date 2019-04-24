@@ -1,0 +1,6 @@
+module DateTimePicker {
+  umbrella header "DateTimePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -15,21 +15,19 @@ class TopicVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }
 
+//MARK: IBActions
 
+extension TopicVC {
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+}
+
+//MARK: TableView Data Source
 extension TopicVC:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -37,5 +35,14 @@ extension TopicVC:UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let topicCell = tableView.dequeueReusableCell(withIdentifier: "TopicCell", for: indexPath) as! TopicCell
         return topicCell
+    }
+}
+
+//MARK: UItableViewDelegate methods
+extension TopicVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let topicCollectionVC = storyboard?.instantiateViewController(withIdentifier: "TopicCollectionVC") as! TopicCollectionVC
+        navigationController?.pushViewController(topicCollectionVC, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

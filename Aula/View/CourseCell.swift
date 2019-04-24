@@ -7,9 +7,26 @@
 //
 
 import UIKit
-
+import SwiftDate
 class CourseCell: UITableViewCell {
 
+    @IBOutlet weak var classTimeLabel: UILabel!
+    @IBOutlet weak var instructorNameLabel: UILabel!
+    @IBOutlet weak var courseNameLabel: UILabel!
+    
+    var course:Course? {
+        didSet {
+            refreshUI()
+        }
+    }
+    
+    func refreshUI() {
+        if let course = course {
+            courseNameLabel.text = "\(course.courseName)(\(course.courseCode))"
+            instructorNameLabel.text = "Prof. \(course.instructorName)"
+            classTimeLabel.text = "From \(course.startTime?.convertTo(region: Region.current).toFormat("h:mm a") ?? "") to \(course.endTime?.convertTo(region: Region.current).toFormat("h: mm a") ?? "")"
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -29,6 +29,7 @@ class SignUpVC: UIViewController {
 extension SignUpVC {
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
         signUp()
+        
     }
 }
 
@@ -46,6 +47,7 @@ extension SignUpVC {
                 changeRequest.displayName = displayName
                 changeRequest.commitChanges(completion: { (error) in
                     print("User \(Auth.auth().currentUser?.displayName)")
+                    self.navigateToSelectRole()
                 })
             }
             if let error = error {
@@ -53,4 +55,9 @@ extension SignUpVC {
             }
         }
     }
+    private func navigateToSelectRole() {
+        let selectRoleVC = storyboard?.instantiateViewController(withIdentifier: "SelectRoleVC") as! SelectRoleVC
+        navigationController?.pushViewController(selectRoleVC, animated: true)
+    }
+    
 }

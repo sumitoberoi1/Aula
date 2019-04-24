@@ -16,6 +16,9 @@
 		1943D3B6225B6442008B3A34 /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943D3B5225B6442008B3A34 /* RadialGradientView.swift */; };
 		1943D3B8225B7A96008B3A34 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943D3B7225B7A96008B3A34 /* SplashVC.swift */; };
 		1943D3BA225B8416008B3A34 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943D3B9225B8416008B3A34 /* Extensions.swift */; };
+		197920ED22649CFD00243584 /* TopicCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197920EC22649CFD00243584 /* TopicCollectionCell.swift */; };
+		197920EF2264B2D600243584 /* LectureReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197920EE2264B2D600243584 /* LectureReviewVC.swift */; };
+		197920F12264BFA000243584 /* TeacherLectureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197920F02264BFA000243584 /* TeacherLectureVC.swift */; };
 		197DA270225C47C00049965C /* TopicCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197DA26F225C47C00049965C /* TopicCollectionVC.swift */; };
 		197DA272225CEB240049965C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 197DA271225CEB240049965C /* GoogleService-Info.plist */; };
 		197FF450225BE8A400EE295C /* AddCourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FF44F225BE8A300EE295C /* AddCourseVC.swift */; };
@@ -27,6 +30,7 @@
 		198A7011225BB00500B6B019 /* SelectRoleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A7010225BB00500B6B019 /* SelectRoleVC.swift */; };
 		198A7013225BBA0F00B6B019 /* CourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A7012225BBA0F00B6B019 /* CourseVC.swift */; };
 		19ABFC9622630AE10017C867 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ABFC9522630AE10017C867 /* FirebaseHelper.swift */; };
+		19C2B3592263F30400499C42 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2B3582263F30400499C42 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,9 @@
 		1943D3B5225B6442008B3A34 /* RadialGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
 		1943D3B7225B7A96008B3A34 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		1943D3B9225B8416008B3A34 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		197920EC22649CFD00243584 /* TopicCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCollectionCell.swift; sourceTree = "<group>"; };
+		197920EE2264B2D600243584 /* LectureReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureReviewVC.swift; sourceTree = "<group>"; };
+		197920F02264BFA000243584 /* TeacherLectureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherLectureVC.swift; sourceTree = "<group>"; };
 		197DA26F225C47C00049965C /* TopicCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCollectionVC.swift; sourceTree = "<group>"; };
 		197DA271225CEB240049965C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		197FF44F225BE8A300EE295C /* AddCourseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseVC.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 		198A7010225BB00500B6B019 /* SelectRoleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleVC.swift; sourceTree = "<group>"; };
 		198A7012225BBA0F00B6B019 /* CourseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseVC.swift; sourceTree = "<group>"; };
 		19ABFC9522630AE10017C867 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		19C2B3582263F30400499C42 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		1B4888A15F3BF2E484E657B6 /* Pods-Aula.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aula.debug.xcconfig"; path = "Target Support Files/Pods-Aula/Pods-Aula.debug.xcconfig"; sourceTree = "<group>"; };
 		31C776ACFBE489803FAB90F0 /* Pods-Aula.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aula.release.xcconfig"; path = "Target Support Files/Pods-Aula/Pods-Aula.release.xcconfig"; sourceTree = "<group>"; };
 		B2F1F0932D82CE4EC38E46B1 /* libPods-Aula.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aula.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				1943D3A3225B6310008B3A34 /* AppDelegate.swift */,
+				19C2B3582263F30400499C42 /* Course.swift */,
 				1943D3B5225B6442008B3A34 /* RadialGradientView.swift */,
 				198A700D225B9E2400B6B019 /* Controllers */,
 				1943D3A7225B6310008B3A34 /* Main.storyboard */,
@@ -108,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				198A700A225B986D00B6B019 /* CustomTextField.swift */,
+				197920EC22649CFD00243584 /* TopicCollectionCell.swift */,
 				197FF451225BF53000EE295C /* CourseCell.swift */,
 				197FF455225C178700EE295C /* TopicCell.swift */,
 			);
@@ -125,6 +135,8 @@
 				197FF44F225BE8A300EE295C /* AddCourseVC.swift */,
 				197FF453225C171B00EE295C /* TopicVC.swift */,
 				197DA26F225C47C00049965C /* TopicCollectionVC.swift */,
+				197920EE2264B2D600243584 /* LectureReviewVC.swift */,
+				197920F02264BFA000243584 /* TeacherLectureVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -157,6 +169,7 @@
 				1943D39C225B6310008B3A34 /* Sources */,
 				1943D39D225B6310008B3A34 /* Frameworks */,
 				1943D39E225B6310008B3A34 /* Resources */,
+				4CA95EF59F1DD18EDAB44360 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +228,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4CA95EF59F1DD18EDAB44360 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aula/Pods-Aula-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aula/Pods-Aula-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9414EA757FC15A7DDEA5140E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,13 +287,17 @@
 				197FF456225C178700EE295C /* TopicCell.swift in Sources */,
 				197FF454225C171B00EE295C /* TopicVC.swift in Sources */,
 				1943D3BA225B8416008B3A34 /* Extensions.swift in Sources */,
+				19C2B3592263F30400499C42 /* Course.swift in Sources */,
 				1943D3A6225B6310008B3A34 /* LoginVC.swift in Sources */,
 				198A700B225B986D00B6B019 /* CustomTextField.swift in Sources */,
 				1943D3B8225B7A96008B3A34 /* SplashVC.swift in Sources */,
 				1943D3B6225B6442008B3A34 /* RadialGradientView.swift in Sources */,
+				197920F12264BFA000243584 /* TeacherLectureVC.swift in Sources */,
+				197920ED22649CFD00243584 /* TopicCollectionCell.swift in Sources */,
 				198A7013225BBA0F00B6B019 /* CourseVC.swift in Sources */,
 				197DA270225C47C00049965C /* TopicCollectionVC.swift in Sources */,
 				1943D3A4225B6310008B3A34 /* AppDelegate.swift in Sources */,
+				197920EF2264B2D600243584 /* LectureReviewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,4 +3,8 @@ pod 'Firebase'
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
+pod 'DateTimePicker'
+pod 'IQKeyboardManagerSwift'
+pod 'SwiftDate'
+pod 'ALRT'
 end
