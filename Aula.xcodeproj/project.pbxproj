@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		086D2AAD63B5848521DF17E4 /* libPods-Aula.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F1F0932D82CE4EC38E46B1 /* libPods-Aula.a */; };
+		1906BA2A2270A1800026D743 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906BA292270A1800026D743 /* StringConstants.swift */; };
+		1906BA2C2270BC4D0026D743 /* SelectCourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906BA2B2270BC4D0026D743 /* SelectCourseVC.swift */; };
+		1906BA2E2270D7510026D743 /* SelectCourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906BA2D2270D7510026D743 /* SelectCourseCell.swift */; };
 		1943D3A4225B6310008B3A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943D3A3225B6310008B3A34 /* AppDelegate.swift */; };
 		1943D3A6225B6310008B3A34 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943D3A5225B6310008B3A34 /* LoginVC.swift */; };
 		1943D3A9225B6310008B3A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1943D3A7225B6310008B3A34 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1906BA292270A1800026D743 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		1906BA2B2270BC4D0026D743 /* SelectCourseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCourseVC.swift; sourceTree = "<group>"; };
+		1906BA2D2270D7510026D743 /* SelectCourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCourseCell.swift; sourceTree = "<group>"; };
 		1943D3A0225B6310008B3A34 /* Aula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aula.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1943D3A3225B6310008B3A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1943D3A5225B6310008B3A34 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 				1943D3A3225B6310008B3A34 /* AppDelegate.swift */,
 				19C2B3582263F30400499C42 /* Course.swift */,
 				1943D3B5225B6442008B3A34 /* RadialGradientView.swift */,
+				1906BA292270A1800026D743 /* StringConstants.swift */,
 				198A700D225B9E2400B6B019 /* Controllers */,
 				1943D3A7225B6310008B3A34 /* Main.storyboard */,
 				1943D3B9225B8416008B3A34 /* Extensions.swift */,
@@ -117,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				198A700A225B986D00B6B019 /* CustomTextField.swift */,
+				1906BA2D2270D7510026D743 /* SelectCourseCell.swift */,
 				197920EC22649CFD00243584 /* TopicCollectionCell.swift */,
 				197FF451225BF53000EE295C /* CourseCell.swift */,
 				197FF455225C178700EE295C /* TopicCell.swift */,
@@ -137,6 +145,7 @@
 				197DA26F225C47C00049965C /* TopicCollectionVC.swift */,
 				197920EE2264B2D600243584 /* LectureReviewVC.swift */,
 				197920F02264BFA000243584 /* TeacherLectureVC.swift */,
+				1906BA2B2270BC4D0026D743 /* SelectCourseVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -287,6 +296,7 @@
 				197FF456225C178700EE295C /* TopicCell.swift in Sources */,
 				197FF454225C171B00EE295C /* TopicVC.swift in Sources */,
 				1943D3BA225B8416008B3A34 /* Extensions.swift in Sources */,
+				1906BA2A2270A1800026D743 /* StringConstants.swift in Sources */,
 				19C2B3592263F30400499C42 /* Course.swift in Sources */,
 				1943D3A6225B6310008B3A34 /* LoginVC.swift in Sources */,
 				198A700B225B986D00B6B019 /* CustomTextField.swift in Sources */,
@@ -294,7 +304,9 @@
 				1943D3B6225B6442008B3A34 /* RadialGradientView.swift in Sources */,
 				197920F12264BFA000243584 /* TeacherLectureVC.swift in Sources */,
 				197920ED22649CFD00243584 /* TopicCollectionCell.swift in Sources */,
+				1906BA2E2270D7510026D743 /* SelectCourseCell.swift in Sources */,
 				198A7013225BBA0F00B6B019 /* CourseVC.swift in Sources */,
+				1906BA2C2270BC4D0026D743 /* SelectCourseVC.swift in Sources */,
 				197DA270225C47C00049965C /* TopicCollectionVC.swift in Sources */,
 				1943D3A4225B6310008B3A34 /* AppDelegate.swift in Sources */,
 				197920EF2264B2D600243584 /* LectureReviewVC.swift in Sources */,

@@ -10,21 +10,26 @@ import Foundation
 import SwiftDate
 
 class Course {
-    let id:String
-    let createrUId:String
     let courseCode:String
     let courseName:String
-    let startTime:Date?
-    let endTime:Date?
+    let timings:String
     let instructorName:String
-    init(id:String, createrUId:String,courseCode:String, courseName:String,startTime:String, endTime:String, instructorName:String) {
-        self.id = id
-        self.createrUId = createrUId
+    init(courseCode:String, courseName:String,timings:String,instructorName:String) {
         self.courseCode = courseCode
         self.courseName = courseName
-        self.startTime = startTime.toDate("H:mm a", region: Region.current)?.date
-        self.endTime = endTime.toDate("H:mm a", region: Region.current)?.date
+        self.timings = timings
         self.instructorName = instructorName
     }
-   
+    init(json:[String:String]) {
+        self.courseCode = json["CourseCode"] ?? ""
+        self.courseName = json["courseName"] ?? ""
+        self.timings = json["Timings"] ?? ""
+        self.instructorName = json["Professor"] ?? ""
+    }
+}
+
+extension Course:Equatable {
+    static func == (lhs: Course, rhs: Course) -> Bool {
+        return lhs.courseCode == rhs.courseCode
+    }
 }

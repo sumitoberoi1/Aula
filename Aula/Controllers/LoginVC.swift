@@ -24,6 +24,17 @@ class LoginVC: UIViewController {
 
 extension LoginVC {
     @IBAction func loginButtonTapped(_ sender: UIButton) {
+        if let email = userEmailTextField.text,
+            !email.isValidEmail() {
+            ALRT.create(.alert,title: StringConstants.emailError).addOK().show()
+            return
+        }
+        
+        if let password = userPasswordTextField.text,
+            password.count < 6 {
+            ALRT.create(.alert,title: "You should choose a password longer than six Characters").addOK().show()
+            return
+        }
         login()
     }
 }

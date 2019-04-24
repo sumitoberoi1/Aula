@@ -87,7 +87,7 @@ private extension SplashVC {
                         self.logoLabel.transform = CGAffineTransform.identity
         }) { (completed) in
             if completed {
-                self.moveLogoUp()
+                self.navigate()
             }
         }
     }
@@ -183,17 +183,21 @@ private extension SplashVC {
                 .child("\(user.uid)")
                 .observeSingleEvent(of: .value,
                                     with: { [unowned self](snapshot) in
-                                        if snapshot.hasChild("role") {
-                                           self.navigateToCourse()
-                                        } else {
-                                            self.navigateToSelectRole()
-                                        }
+                                        
+                                        HelperMethods.delayWithSeconds(0.2, completion: {
+                                            if snapshot.hasChild("role") {
+                                                self.navigateToCourse()
+                                            } else {
+                                                self.navigateToSelectRole()
+                                            }
+                                        })
+                                        
                 }) { (error) in
-                    self.navigateToRegister()
+                    self.moveLogoUp()
             }
            
         } else {
-            navigateToRegister()
+            moveLogoUp()
         }
     }
     

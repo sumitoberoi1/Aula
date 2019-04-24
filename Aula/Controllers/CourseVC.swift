@@ -46,15 +46,15 @@ extension CourseVC {
                 }
                 self.courses = []
                 if let firebaseCourses = snapshot.value as? [String:[String:String]] {
-                    for (key,value) in firebaseCourses {
+                    for (_,value) in firebaseCourses {
                         
-                        self.courses.append(Course(id: key,
-                                              createrUId: value["creater"] ?? "",
-                                              courseCode: value["courseCode"] ?? "",
-                                              courseName: value["courseName"] ?? "",
-                                              startTime: value["startTime"] ?? "",
-                                              endTime: value["endTime"] ?? "",
-                                              instructorName: value["instructorName"] ?? ""))
+//                        self.courses.append(Course(id: key,
+//                                              createrUId: value["creater"] ?? "",
+//                                              courseCode: value["courseCode"] ?? "",
+//                                              courseName: value["courseName"] ?? "",
+//                                              startTime: value["startTime"] ?? "",
+//                                              endTime: value["endTime"] ?? "",
+//                                              instructorName: value["instructorName"] ?? ""))
                     }
                     self.courseTableView.reloadData()
                 }

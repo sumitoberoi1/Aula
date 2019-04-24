@@ -24,7 +24,7 @@ class CourseCell: UITableViewCell {
         if let course = course {
             courseNameLabel.text = "\(course.courseName)(\(course.courseCode))"
             instructorNameLabel.text = "Prof. \(course.instructorName)"
-            classTimeLabel.text = "From \(course.startTime?.convertTo(region: Region.current).toFormat("h:mm a") ?? "") to \(course.endTime?.convertTo(region: Region.current).toFormat("h: mm a") ?? "")"
+            classTimeLabel.text = course.timings
         }
     }
     override func awakeFromNib() {
