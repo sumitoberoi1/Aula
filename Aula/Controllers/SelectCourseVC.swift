@@ -14,7 +14,9 @@ class SelectCourseVC: UIViewController {
     
     var selectedCourses = [Course]() {
         didSet {
-            courseTableView.reloadData()
+            if let courseTableView = courseTableView {
+                courseTableView.reloadData()
+            }
         }
     }
     var courses = [Course]() {

@@ -12,13 +12,21 @@ class CourseVC: UIViewController {
 
     @IBOutlet weak var noCoursesFoundView: UIStackView!
     @IBOutlet weak var courseTableView: UITableView!
-    var courses = [Course]()
+    var courses = [Course]() {
+        didSet {
+            courseTableView.reloadData()
+            if courses.count > 0 {
+                courseTableView.alpha = 1.0
+                noCoursesFoundView.alpha = 0.0
+            } else {
+                courseTableView.alpha = 0.0
+                noCoursesFoundView.alpha = 1.0
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        courseTableView.alpha = 0.0
-        noCoursesFoundView.alpha = 1.0
         configUI()
-        // Do any additional setup after loading the view.
     }
 
 }
@@ -30,16 +38,27 @@ extension CourseVC {
     }
     
     func configAccordingToCourses() {
-        guard let user = Auth.auth().currentUser else {return}
-        FirebaseHelper.shared.enrolledCourseRef?.observe(.value, with: { (snapshot) in
-            
+        FirebaseHelper.shared.enrolledCourseRef?.observe(.value, with: { [weak self] (snapshot) in
+            if let dict = snapshot.value as? [String:[String:String]] {
+                var tempCourses = [Course]()
+                for courseDict in dict.values {
+                    tempCourses.append(Course(json: courseDict))
+                }
+                self?.courses = tempCourses
+            }
+
         })
-    
     }
 }
 
+
+//MARK: IBActions
 extension CourseVC {
-    
+    @IBAction func addCourseButtonTapped(_ sender:UIButton) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "SelectCourseVC") as! SelectCourseVC
+        controller.selectedCourses =  courses
+        present(controller, animated: true, completion: nil)
+    }
 }
 
 
