@@ -34,14 +34,16 @@ class SelectCourseVC: UIViewController {
 private extension SelectCourseVC {
     @IBAction func doneButtonTapped(_ sender:UIButton) {
         if selectedCourses.count > 0 {
-            if let enrolledCourses = FirebaseHelper.shared.enrolledCourseRef {
+            if let enrolledCoursesRef = FirebaseHelper.shared.enrolledCourseRef {
+                var enrolledCourses = [String:[String:String]]()
                 for course in selectedCourses {
                     let courseDict = ["CourseCode":course.courseCode,
                                       "Professor":course.instructorName,
                                       "Timings":course.timings,
                                       "courseName":course.courseName]
-                    enrolledCourses.setValue(["\(course.courseCode)":courseDict])
+                    enrolledCourses[course.courseCode] = courseDict
                 }
+                enrolledCoursesRef.setValue(enrolledCourses)
             }
         }
         self.dismiss(animated: true, completion: nil)

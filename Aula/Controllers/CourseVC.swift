@@ -31,34 +31,10 @@ extension CourseVC {
     
     func configAccordingToCourses() {
         guard let user = Auth.auth().currentUser else {return}
-         FirebaseHelper
-            .shared
-            .coursesRef
-            .queryOrdered(byChild: "creater")
-            .queryEqual(toValue: user.uid).observe(.value) { [unowned self] (snapshot) in
-                
-                if snapshot.hasChildren() {
-                    self.courseTableView.alpha = 1.0
-                    self.noCoursesFoundView.alpha = 0.0
-                } else {
-                    self.courseTableView.alpha = 0.0
-                    self.noCoursesFoundView.alpha = 1.0
-                }
-                self.courses = []
-                if let firebaseCourses = snapshot.value as? [String:[String:String]] {
-                    for (_,value) in firebaseCourses {
-                        
-//                        self.courses.append(Course(id: key,
-//                                              createrUId: value["creater"] ?? "",
-//                                              courseCode: value["courseCode"] ?? "",
-//                                              courseName: value["courseName"] ?? "",
-//                                              startTime: value["startTime"] ?? "",
-//                                              endTime: value["endTime"] ?? "",
-//                                              instructorName: value["instructorName"] ?? ""))
-                    }
-                    self.courseTableView.reloadData()
-                }
-        }
+        FirebaseHelper.shared.enrolledCourseRef?.observe(.value, with: { (snapshot) in
+            
+        })
+    
     }
 }
 

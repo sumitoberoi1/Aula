@@ -28,7 +28,7 @@ class AddCourseVC: UIViewController {
         startTimeTextField.inputView = startTimePicker
         endTimeTextField.inputView = endTimePicker
     }
-
+    
 }
 
 
@@ -44,6 +44,8 @@ extension AddCourseVC {
     }
     
 }
+
+
 //MARK: Actions
 extension AddCourseVC {
     @IBAction func addCourseButtonTapped(_ sender: UIButton) {
